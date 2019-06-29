@@ -1,0 +1,22 @@
+<nav class="grey darken-1">
+    <div class="nav-wrapper">
+        <a [routerLink]="['inicio']" class="brand-logo">Navegacion</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li>
+                <a [routerLink]="['store']">
+                    <i class="material-icons white-text text-lighten-2">keyboard_backspace</i></a>
+            </li>
+            <li>
+                <a [routerLink]="['carrito']" class="icon">
+                    <i class="material-icons white-text text-lighten-2">shopping_cart</i>
+                    <span class="badge" *ngIf="productoscarro.length > 0">{{productoscarro.length}}</span>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['']">
+                    <i class="material-icons white-text text-lighten-2">exit_to_app</i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

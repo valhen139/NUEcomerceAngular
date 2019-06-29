@@ -1,0 +1,12 @@
+hr {
+    color: gray;
+}
+
+.row.main {
+    margin-bottom: 0px;
+    background-image: url('../../assets/main-fondo.jpg');
+}
+
+.col.m7 {
+    width: 100%;
+}

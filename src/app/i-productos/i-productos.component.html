@@ -1,0 +1,36 @@
+<div class="card">
+
+    <div class="card-content">
+        <span class="card-title red-text">Catalogo de Productos</span>
+        <input type="text" placeholder="busqueda" [(ngModel)]="filtro.nombre">
+        <div class="divider"></div>
+        <div class="grupos-container">
+            <div class="wait" *ngIf="carga">
+                <img class="loader" src="../assets/load.gif">
+            </div>
+            <div class="item-grupo-container" *ngIf="!carga">
+                <div class="item-grupo" *ngFor="let item of productos | filterBy: filtro">
+                    <img class="img-grupo" [src]="item.imagen">
+                    <div class="black-text center">
+                        {{item.nombre}}
+                    </div>
+                    <div class="red-text center">
+                        Precio: S/{{item.precio}}
+                    </div>
+                    <div class="red-text center">
+                        Cant: {{item.cantidad}}
+                    </div>
+                    <div class="acciones">
+                        <input class="cantidad" [(ngModel)]="item.cant" type="number" min="0" value=0 [max]="item.cantidad">
+                        <a class="btn-floating waves-effect right green btn-small" (click)="addCarrito(item, productos.indexOf(item))">
+                            <i class=" material-icons white-text text-lighten-2 ">shopping_cart</i>
+                        </a>
+                        <a class="btn-floating waves-effect right blue btn-small" (click)="verItem(item)">
+                            <i class="material-icons white-text text-lighten-2 ">description</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

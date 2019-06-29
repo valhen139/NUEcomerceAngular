@@ -1,0 +1,37 @@
+.card {
+    height: 40rem;
+    width: 100%;
+    opacity: 0.7;
+}
+
+.card-content {
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    width: 7em;
+    height: 7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a i {
+    font-size: 4em;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.loader {
+    opacity: 0.7;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

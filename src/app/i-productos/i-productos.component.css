@@ -1,0 +1,67 @@
+    .card {
+        height: 100%;
+    }
+    
+    .grupos-container {
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 25px;
+    }
+    
+    .item-grupo {
+        width: 33%;
+        display: flex;
+        flex-flow: column nowrap;
+        height: 300px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .item-grupo-container {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .img-grupo {
+        width: 60%;
+        height: 60%;
+        border: 1px solid #e0e0e0;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .wait {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .loader {
+        width: 100px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .large-icon {
+        font-size: 40px;
+    }
+    
+    .cantidad {
+        width: 20%;
+        border: 1px solid;
+        margin: 0px;
+        padding: 0px;
+        float: right;
+    }
+    
+    .acciones {
+        width: 60%;
+    }

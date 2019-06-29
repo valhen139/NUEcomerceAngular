@@ -1,0 +1,30 @@
+<div class="card">
+    <div class="card-content">
+        <span class="card-title red-text">Item</span>
+        <div class="red-text right">
+        </div>
+        <div class="divider"></div>
+        <div class="grupos-container">
+            <div class="item-grupo">
+                <img class="img-grupo" [src]="item.imagen">
+                <div class="black-text center">
+                    {{item.nombre}}
+                </div>
+                <div class="red-text center">
+                    Precio: S/{{item.precio}}
+                </div>
+                <div class="red-text center">
+                    Cant: {{item.cantidad}}
+                </div>
+            </div>
+            <div class="item-grupo-desc">
+                <div class="red-text center">
+                    Propiedades
+                </div>
+                <div class="propiedades">
+                    {{item.prop}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
