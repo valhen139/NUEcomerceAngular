@@ -1,6 +1,6 @@
 <div class="card">
     <div class="card-content">
-        <h2 class="cyan-text text-lighten-2">Ingresa</h2>
+        <h2 class="cyan-text text-lighten-2">Ingresa a Nuestra Tienda</h2>
         <h4 *ngIf="error" class="red-text text-lighten-2">{{error}}</h4>
         <form (ngSubmit)="Login(f)" #f="ngForm">
             <input class="input-login" id="mail" placeholder="correo electronico" type="email" ngModel name="mail" required patern="/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/">
